@@ -1,0 +1,75 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15723734416,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Land into main page and click on login",
+        "description": "",
+        "id": "open-dashboard;land-into-main-page-and-click-on-login",
+        "after": [
+          {
+            "result": {
+              "duration": 592982042,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8041836750,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Launch the mwi website",
+            "match": {
+              "location": "DashboardPage.launch_the_mwi_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2067029917,
+              "error_message": "java.lang.AssertionError\n\tat com.dashboard.stepDefination.DashboardPage.i_can_see_its_correct_page(DashboardPage.java:20)\n\tat ✽.Then i can see its correct page(dashboardPage.feature:12)\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "i can see its correct page",
+            "match": {
+              "location": "DashboardPage.i_can_see_its_correct_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Open Dashboard",
+    "description": "\nAs a qa engineer\nI wanted to open the dashboard\nSo i can prove automation work as expected",
+    "id": "open-dashboard",
+    "keyword": "Feature",
+    "uri": "dashboardPage.feature"
+  }
+]
